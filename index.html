@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hyuk">
+    <meta name="description" content="포트폴리오">
+    <title>KANTUS</title>
+    <!-- 폰트어썸 4.7 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- 폰트어썸 5 -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+    <link rel="shortcut icon" href="./images/lemon_favi.png">
+    <link rel="apple-touch-icon=precomposed" href="./images/lemon_favi180.png">
+    <!-- 페이지 CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/rwd_template2.css">
+    <link rel="stylesheet" href="./include/aside.css">
+    <!-- 기본 코딩 JS파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <!-- 박스 슬라이더 JS -->
+    <script src="./js/jquery.bxslider.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> -->
+</head>
+<body>
+    <div id="wrap">
+        <!-- 1. Header -->
+        <header class="header">
+            <!-- 로고 -->
+            <div class="container header_container">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="./images/logo.png" alt="로고이미지">
+                    </a>
+                </h1>
+                <!-- gnb -->
+                <nav class="gnb">
+                    <ul>
+                        <li class="no_ml"><a href="#">HOME</a></li>
+                        <li><a href="#">PRODUCT</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">Q & A</a></li>
+                        <li><a href="#">RECIPE</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <nav class="m_gnb">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./images/lemon/hamburger.png" alt="" class="hamburgerImg" style="width: 32px; height: 32px;">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- /1. Header -->
+        <!-- 햄버거 메뉴 클릭시 메뉴창 보이기 -->
+        <!-- 이 부분 모달창으로 바꾸기 -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+              <!-- 모달 내용이 들어갈 위치 -->
+            </div>
+          </div>
+        
+        <!-- <aside class="slide_menu">
+            <div class="slide_menu_gnb">
+                <ul>
+                    <li><a href="#">PRODUCT</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">Q & A</a></li>
+                    <li><a href="#">RECIPE</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </aside> -->
+        <!-- 2. Slider -->
+        <!-- <article class="slider">
+            <h2 class="slider_img">
+                <img src="./images/lemon/cover.png" alt="슬라이드 이미지">
+            </h2>
+        </article> -->
+
+        <!-- 2-2. 슬라이드 제이쿼리 플러그인 작업 -->
+        <article class="slider">
+            <div id="gallery_wrap">
+                <ul class="slide_gallery">
+                    <li><img src="./images/lemon/Group 1.png" alt="슬라이드1"></li>
+                    <li><img src="./images/lemon/cover2.png" alt="슬라이드2"></li>
+                    <li><img src="./images/lemon/cover3.png" alt="슬라이드3"></li>
+                </ul>
+            </div>  
+        </article>
+
+        <!-- /2-2. 슬라이드 제이쿼리 플러그인 작업 -->
+
+        <!-- /2. Slider -->
+
+        <!-- 3. Contents -->
+        <main>
+            <section class="content">
+                <!-- 3-1. Display -->
+                <section class="diplay_section cf container">
+                    <h2 class="sec_title">WE ARE</h2>
+                    <div>
+                        <p class="desc">
+                            KANTUS is dad's favorite horse on our farm. Our lemon trees thrive on the compost produced by him and his friends, making our lemons extra tasty!
+                        </p>
+                    </div>
+                </section>
+                <!-- /3-1. Display -->
+                <!-- 3-2. Promotion -->
+                <section class="promotion_section content_container">
+                    <h2>
+                        <ul class="promotion_list cf">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/lemon/icon/farm.png" alt="홈 아이콘">
+                                    <h3>FARM</h3>
+                                    <p>
+                                        From our lemon orchard to your table, savor the natural zing and invigorating aroma of our hand-grown lemons.
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/lemon/icon/weare.png" alt="회사정보 아이콘">
+                                    <h3>WE&nbsp;ARE</h3>
+                                    <p>
+                                        From our lemon grove to your table, we bring you the best lemons.
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/lemon/icon/product.png" alt="제품 아이콘">
+                                    <h3>PRODUCT</h3>
+                                    <p>
+                                        Elevate your palate with our exquisite lemon offerings.
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/lemon/icon/lemon.png" alt="연결하기 아이콘">
+                                    <h3>CONTACT&nbsp;US</h3>
+                                    <p>
+                                        Want to know more about our lemon products or services? Contact KANTUS.
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </h2>
+                </section>
+                <!-- /3-2. Promotion -->
+                
+                <hr class="divider">
+                
+                <!-- 3-3. Work -->
+                <section class="work_section">
+                    <h2 class="sec_title w1132">PRODUCT</h2>
+                    <div>
+                        <ul class="work_list">
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>LEMON HONEY</h3>
+                                        <span>
+                                            Preserved with Manuka honey and organic wild honey from Northern Thailand, we love this with iced tea or just warm water.
+                                        </span>
+                                    </div>
+                                    <img src="./images/lemon/lemonhoney.png" alt="포트폴리오1">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>LEMON CURD</h3>
+                                        <span>
+                                            Made from our organic lemons, this buttery curd is our favourite We like
+                                            it spread onto toasted milk loaf or stirred in natural yoghurt.
+                                        </span>
+                                    </div>
+                                    <img src="./images/lemon/lemoncurd-3.png" alt="포트폴리오6">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>LEMON COOKIE</h3>
+                                        <span>
+                                            Our lemon cookies are a delightful combination of zesty lemon flavor and a buttery, melt-in-your-mouth texture. Perfect for a sweet and tangy treat any time of the day.
+                                        </span>
+                                    </div>
+                                    <img src="./images/lemon/lemon9.png" alt="포트폴리오3">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>ORGANIC LEMONADE</h3>
+                                        <span>Made daily with our fresh Eureka lemons and ready to drink, we prefer it with crushed ice.
+                                            *Please order 1 day in advance.</span>
+                                    </div>
+                                    <img src="./images/lemon/organiclemon.png" alt="포트폴리오4">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>LEMON MACARON</h3>
+                                        <span>
+                                            Delight in our lemon macarons! These airy almond meringue cookies are filled with luscious lemon cream, offering a perfect blend of sweetness and citrus freshness.
+                                        </span>
+                                    </div>
+                                    <img src="./images/lemon/lemon.png" alt="포트폴리오5">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>LEMON TEA</h3>
+                                        <span>
+                                            Savor our organic lemon tea. Handpicked for quality, it offers a bright and tangy flavor that revitalizes. Enjoy it hot or iced for a refreshing beverage.
+                                        </span>
+                                    </div>
+                                    <img src="./images/lemon/lemon2.png" alt="포트폴리오2">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>LEMON CAKE</h3>
+                                        <span>
+                                            Indulge in our heavenly lemon cake! Moist, tender, and bursting with fresh lemon flavor. Topped with a tangy glaze, it's perfect for any occasion or a delightful tea-time treat.
+                                        </span>
+                                    </div>
+                                    <img src="./images/lemon/lemon6.png" alt="포트폴리오7">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>SPECIAL RECIPE</h3>
+                                        <span>
+                                            
+                                            Try our special recipe today! Made with fresh lemons, it offers a unique, captivating taste. With secret ingredients and techniques, this dish promises a delightful culinary experience. Don't miss out on this delicious opportunity!
+                                        </span>
+                                    </div>
+                                    <img src="./images/lemon/lemon10.png" alt="포트폴리오8">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- /3-3. Work -->
+                
+                <hr class="m_divider">
+    
+                <!-- 3-4. Blog -->
+                <section class="blog_section container">
+                    <div class="container m_view">
+                        <h2 class="sec_title">ABOUT</h2>
+                        <ul class="blog_list cf">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/lemon/lemon_blog6.png" alt="블로그 이미지01">
+                                </a>
+                                <h4>WHY OUR LEMON?</h4>
+                                <a href="#">
+                                    <h3>
+                                        Our preservative-free lemonades are made with fresh lemons, bottled within 24 hours of harvest. Pre-order for maximum freshness. Our distinct commitment to freshness sets us apart. Our goal: natural lemon flavor enhanced by our special recipe.
+                                    </h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/lemon/seta.png" alt="블로그 이미지02">
+                                </a>
+                                <h4>WHY KANTUS?</h4  >
+                                <a href="#">    
+                                    <h3>
+                                        KANTUS is the graceful white stallion on our horse farm that happens to be dad’s favourite horse. Our lemon trees live off the nutrients from the compost produced by him and his friends. Without him, our lemons would not be so tasty!
+                                    </h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/lemon/lemon_blog5.png" alt="블로그 이미지03">
+                                </a>
+                                <h4>WHAT MAKES OUR LEMONS SPECIAL?</h4>
+                                <a href="#">
+                                    <h3>
+                                        Our Eureka lemons are known for their fresh and tangy taste. It would be hard to find a more perfect home for them than here, facing a large lake and close to the sea. A sea breeze nourishes the lemons while the lake provides a ready supply of clean water.
+                                    </h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- /3-4. Blog -->
+    
+                <!-- 3-5. Contact -->
+                <section class="contact_section">
+                    <div class="container m_view">
+                        <h2 class="sec_title">CONTACT</h2>
+                        <form action="#" class="form_box">
+                            <fieldset class="cf">
+                                <legend class="blind">CONTACT&nbsp;US</legend>
+                                <!-- Input Form -->
+                                <div class="form">
+                                    <label for="name" class="blind">Name</label>
+                                    <input type="text" id="name" placeholder="Name">
+                                    <label for="Phone" class="blind">Phone</label>
+                                    <input type="tel" id="Phone" placeholder="Phone">
+                                    <label for="email" class="blind">E-Mail</label>
+                                    <input type="email" id="email" placeholder="Email Address">
+                                </div>
+                                <!-- /Input Form -->
+                                <!-- Textarea Form -->
+                                <div class="txta">
+                                    <label for="message" class="blind">Message</label>
+                                    <textarea id="message" placeholder="Message"></textarea>
+                                </div>
+                                <!-- /Textarea Form -->
+                            </fieldset>
+                            <!-- Button -->
+                            <div class="send_btn">
+                                <button><a href="#">SEND MESSAGE</a></button>
+                            </div>
+                            <!-- /Button -->
+                        </form>
+                    </div>
+                </section>
+                <!-- /3-5. Contact -->
+            </section>
+            <!-- /3. Contents -->
+        </main>
+
+        <!-- 4. Footer -->
+        <footer class="footer">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d968.9066752985676!2d100.5429760292194!3d13.74103619939715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29fc3295376c7%3A0xd5dc0c724002cc88!2s43%20Soi%20Langsuan%2C%20Khwaeng%20Lumphini%2C%20Khet%20Pathum%20Wan%2C%20Krung%20Thep%20Maha%20Nakhon%2010330%20%ED%83%9C%EA%B5%AD!5e0!3m2!1sko!2skr!4v1677028146696!5m2!1sko!2skr"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <p>
+                &COPY; Copyright 2019 The KANTUS Lemon Farm All Rights Reserved 
+            </p>
+        </footer>
+        <!-- /4. Footer -->
+        <script src="./js/rwd_template.js"></script>
+        <script src="./js/load.js"></script>
+    </div>
+    
+    <script>
+        $(function(){
+            $('.slide_gallery').bxSlider({
+                // mode: 'fade',
+                pager: true,
+                slideWidth: 1920,
+            });
+        });
+    </script>
+</body>
+</html>
